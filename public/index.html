@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Editor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        HTML Editor
+    </div>
+    <div class="container">
+        <div class="code-container">
+            <div class="panel-header">
+                <span>HTML Code</span>
+                <button id="run-btn" class="btn">Run (Ctrl+Enter)</button>
+            </div>
+            <div class="error-message" id="error-message"></div>
+            <div class="toolbar">
+                <button id="example-btn" class="btn">Load Example</button>
+                <button id="clear-btn" class="btn">Clear</button>
+            </div>
+            <div id="editor-wrapper">
+                <div class="line-numbers" id="line-numbers"></div>
+                <textarea id="editor" placeholder="Type your HTML code here..."></textarea>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="resize-handle" id="resize-handle"></div>
+            <div class="panel-header">
+                <span>Output</span>
+                <button id="refresh-btn" class="btn">Refresh</button>
+            </div>
+            <iframe id="output" sandbox="allow-scripts"></iframe>
+        </div>
+    </div>
+    <script src="/js/editor.js"></script>
+</body>
+</html>
